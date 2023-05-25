@@ -9,6 +9,7 @@ library(tictoc)
 library(tidyverse)
 library(data.table)
 
+
 col_types <- list(
   id = col_character(),
   type = col_character(),
@@ -23,25 +24,25 @@ col_types <- list(
   withdrawn = col_double()
 )
 patent_tbl <- vroom(
-  file       = "C:/User/Mohd Gufran/Downloads/business data Basics/ds_data/Patent_data_reduced/patent.tsv",
+  file       = "C:/Users/Mohd Gufran/Downloads/business data Basics/ds_data/Patent_data_reduced/patent.tsv",
   delim      = "\t",
   col_types  = col_types,
   na         = c("", "NA", "NULL")
 )
 uspc_tbl <- vroom(
-  file       = "C:/User/Mohd Gufran/Downloads/business data Basics/ds_data/Patent_data_reduced/uspc.tsv",
+  file       = "C:/Users/Mohd Gufran/Downloads/business data Basics/ds_data/Patent_data_reduced/uspc.tsv",
   delim      = "\t",
   col_types  = col_types,
   na         = c("", "NA", "NULL")
 )
 patent_assignee_tbl <- vroom(
-  file       = "C:/User/Mohd Gufran/Downloads/business data Basics/ds_data/Patent_data_reduced/patent_assignee.tsv",
+  file       = "C:/Users/Mohd Gufran/Downloads/business data Basics/ds_data/Patent_data_reduced/patent_assignee.tsv",
   delim      = "\t",
   col_types  = col_types,
   na         = c("", "NA", "NULL")
 )
 assignee_tbl <- vroom(
-  file       = "C:/User/Mohd Gufran/Downloads/business data Basics/ds_data/Patent_data_reduced/assignee.tsv",
+  file       = "C:/Users/Mohd Gufran/Downloads/business data Basics/ds_data/Patent_data_reduced/assignee.tsv",
   delim      = "\t",
   col_types  = col_types,
   na         = c("", "NA", "NULL")
